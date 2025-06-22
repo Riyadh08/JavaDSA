@@ -1,9 +1,22 @@
-import java.util.Scanner;
+interface ryad{
+    final int a = 10;
+
+    void display();
+}
+
+
+class Test implements ryad{
+    public void display(){
+        System.out.println("ryad");
+    }
+}
+
+
 public class tut1{
     public static void main(String args[]){
-     Scanner sc = new Scanner(System.in);
-     Scanner sc2 = new Scanner(System.in);
-     int i = sc.nextInt();
-     System.out.println("int i="+i);
+
+        Test tt = new Test();
+        tt.display();
+     
     }
 }
